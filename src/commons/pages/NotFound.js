@@ -1,7 +1,7 @@
 import React from 'react';
 
-const ErrorPage = ({ children }) => {
-  return <h1>{children}</h1>;
+const NotFound = () => {
+  return <h1>페이지 없음...</h1>;
 };
 
-export default React.memo(ErrorPage);
+export default React.memo(NotFound);

@@ -10,3 +10,6 @@ img { border: 0; }
 h1, h2, h3 { margin: 0; padding: 0; }
 
 .layout-width { max-width: 1380px; min-width: 1280px; margin: 0 auto; padding: 0 10px; }
+
+/* 여백 공통 */
+.mt20 { margin-top: 20px !important; }

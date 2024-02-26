@@ -42,7 +42,7 @@ yarn add react-router-dom sass styled-components classnames @loadable/component 
 npm i react-router-dom sass styled-components classnames @loadable/component immer axios i18next react-i18next react-icons
 ```
 
-# 초기 구성 - src/index.js
+# 초기 구성 
 
 - HelmetProvider
 - BrowserRouter

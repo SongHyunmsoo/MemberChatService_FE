@@ -1,23 +1,23 @@
-import React from 'react';
-import { Helmet } from 'react-helmet-async';
-import { useTranslation } from 'react-i18next';
-import JoinContainer from '../containers/JoinContainer';
-import { MainTitle } from '../../commons/components/TitleStyle';
-import { ShadowBox } from '../../commons/components/ContentBoxStyle';
+import React from "react";
+import { Helmet } from "react-helmet-async";
+import { useTranslation } from "react-i18next";
+import JoinContainer from "../containers/JoinContainer";
+import { MainTitle } from "../../commons/components/TitleStyle";
+import { ShadowBox } from "../../commons/components/ContentBoxStyle";
 
-const JoinPage = () => {
-  const { t } = useTranslation();
+const JoinPage = () => {  
+    const { t } = useTranslation();
 
-  return (
-    <>
-      <Helmet>
-        <title>{t('회원가입')}</title>
+  return( 
+      <>
+     <Helmet>
+      <title>{t('회원가입')}</title>
       </Helmet>
       <ShadowBox>
-        <MainTitle>{t('회원가입')}</MainTitle>
-        <JoinContainer />
+      <MainTitle>{t('회원가입')}</MainTitle>
+      <JoinContainer />
       </ShadowBox>
-    </>
+     </>
   );
 };
 

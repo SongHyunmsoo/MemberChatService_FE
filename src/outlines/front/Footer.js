@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const FooterBox = styled.footer`
   background: #f9f9f9;
@@ -9,8 +9,8 @@ const FooterBox = styled.footer`
 
 const Footer = () => {
   return (
-    <FooterBox>
-      <div className="layout-width">푸터..</div>
+   <FooterBox>
+    <div className="layout-width">푸터..</div>
     </FooterBox>
   );
 };

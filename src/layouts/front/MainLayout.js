@@ -10,15 +10,15 @@ const ContentBox = styled.main`
 `;
 
 const MainLayout = () => {
-  return (
-    <>
-      <Header />
-      <ContentBox>
-        <Outlet />
-      </ContentBox>
-      <Footer />
-    </>
-  );
+    return (
+        <>
+          <Header />
+          <ContentBox>
+          <Outlet />
+          </ContentBox>
+          <Footer />
+        </>
+    );
 };
 
 export default React.memo(MainLayout);

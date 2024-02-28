@@ -1,17 +1,18 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
-import LoginContainer from '../containers/LoginContainer';
-const LoginPage = () => {
+
+const UnAuthorized = () => {
   const { t } = useTranslation();
+
   return (
     <>
       <Helmet>
-        <title>{t('로그인')}</title>
+        <title>{t('페이지_접근권한_없음')}</title>
       </Helmet>
-      <LoginContainer />
+      <h1>{t('페이지_접근권한_없음')}</h1>
     </>
   );
 };
 
-export default React.memo(LoginPage);
+export default React.memo(UnAuthorized);

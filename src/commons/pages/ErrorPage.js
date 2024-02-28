@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-const ErrorPage = ({ children }) => {
-  return <h1>{children}</h1>;
+const ErrorPage = ({chilren}) => {
+    return <h1>{chilren}</h1>;
 };
 
 export default React.memo(ErrorPage);

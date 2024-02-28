@@ -1,26 +1,26 @@
 export const fontSize = {
-  small: 0.85,
-  normal: 1,
-  medium: 1.25,
-  big: 1.5,
-  extraBig: 2,
+    small: 0.85,
+    normal: 1,
+    medium: 1.25,
+    big: 1.5,
+    extraBig: 2,
 };
 
 export const buttonSize = {
-  small: {
+   small: {
     width: 80,
-    height: 30,
-  },
-  normal: {
+    height: 30
+   },
+   normal: {
     width: 120,
     height: 40,
-  },
-  medium: {
+   },
+   medium: {
     width: 180,
     height: 45,
-  },
-  big: {
+   },
+   big: {
     width: 220,
     height: 55,
-  },
+   },
 };

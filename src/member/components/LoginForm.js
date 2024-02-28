@@ -85,6 +85,8 @@ const LoginForm = ({ onChange, onSubmit, form, errors }) => {
           {t('로그인')}
         </MediumButton>
 
+        <MessageBox messages={errors.global} color="danger" />
+
         <div className="links">
           <Link to="/member/find_id">
             <FiLock /> {t('아이디_찾기')}

@@ -46,7 +46,6 @@ npm i react-router-dom sass styled-components classnames @loadable/component imm
 
 - HelmetProvider
 - BrowserRouter
-<<<<<<< HEAD
 
 # 화면구성
 
@@ -94,5 +93,3 @@ npm i react-router-dom sass styled-components classnames @loadable/component imm
 - 실시간 채팅
 - 내용 기록
 - @푸쉬 알람
-=======
->>>>>>> 2d6e5c342e9e381a2d5fc689fab5f0fe9ede9180

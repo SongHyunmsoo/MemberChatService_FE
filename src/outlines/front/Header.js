@@ -114,7 +114,7 @@ const Header = () => {
         <div className="links">
           {isLogin ? (
             <>
-              <span onClick={onLogout}>
+               <span onClick={onLogout}>    {/* 로그아웃 버튼 */}
                 <FiLogOut className="icon" /> {t('로그아웃')}
               </span>
               <NavLink
@@ -124,7 +124,7 @@ const Header = () => {
                 {t('마이페이지')}
               </NavLink>
 
-              {isAdmin && (
+              {isAdmin && (   // 관리자 일때에만 사아트 관리 버튼이 보인다.
                 <NavLink
                   to="/admin"
                   className={({ isActive }) => classNames({ on: isActive })}

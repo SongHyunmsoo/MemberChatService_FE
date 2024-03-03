@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import AdminOnlyContainer from '../../commons/containers/AdminOnlyContainer';
+import AdminOnlyContainer from '../../commons/containers/AdminOnlyContainer'; // 관리자 아니면 페이지 숨김
 import { Outlet } from 'react-router-dom';
 import Header from '../../outlines/admin/Header';
 import Side from '../../outlines/admin/Side';
@@ -24,7 +24,7 @@ const ContentBox = styled.main`
 
 const MainLayout = () => {
   return (
-    <AdminOnlyContainer>
+     <AdminOnlyContainer>  
       <Header />
       <ContentBox>
         <Side />

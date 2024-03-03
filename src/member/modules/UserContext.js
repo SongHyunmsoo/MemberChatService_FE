@@ -32,7 +32,7 @@ const UserProvider = ({ children }) => {
           _userInfo = null;
         if (userInfo) {
           isLogin = true;
-          isAdmin = userInfo.authority === 'ADMIN';
+          isAdmin = userInfo.authority === 'ADMIN';   //   관리자
           _userInfo = userInfo;
         }
 

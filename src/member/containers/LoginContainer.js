@@ -14,9 +14,9 @@ const LoginContainer = () => {
 
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const [searchParams] = useSearchParams();
+  const [searchParams] = useSearchParams(); // 리엑트에 편의기능
 
-  const redirectURL = searchParams.get('redirectURL') || '/';
+  const redirectURL = searchParams.get('redirectURL') || '/'; // URL 을 가져오기 위해 searchParams 를 쓴다.
 
   const userContext = useContext(UserContext);
 
@@ -66,7 +66,7 @@ const LoginContainer = () => {
             path: '/',
           });
 
-          updateMemberInfo(userContext); // 회원정보, 로그인 상태, 관리자 여부 업데이트
+          updateMemberInfo(userContext); // 회원정보, 로그 인 상태, 관리자 여부 업데이트
 
           navigate(redirectURL);
         })

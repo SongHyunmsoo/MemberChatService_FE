@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import loadable from '@loadable/component';
 import MainLayout from './layouts/front/MainLayout';
 
-const AdminMainLayout = loadable(() => import('./layouts/admin/MainLayout'));
+const AdminMainLayout = loadable(() => import('./layouts/admin/MainLayout'));   // 관리자 메인 페이지 레이아웃
 
 const MainPage = loadable(() => import('./main/pages/MainPage'));
 const NotFound = loadable(() => import('./commons/pages/NotFound'));
@@ -29,11 +29,11 @@ const BasicConfigPage = loadable(() =>
 /* 회원관리 S */
 const MemberListPage = loadable(() =>
   import('./admin/member/pages/MemberListPage'),
-);
+); 
 
 /* 회원관리 E */
 
-/* 게시판 관리 S */
+/* 게시판 관리 S */ 
 const BoardListPage = loadable(() =>
   import('./admin/board/pages/BoardListPage'),
 );
@@ -79,7 +79,7 @@ const App = () => {
           <Route index element={<MemberListPage />} />
         </Route>
         {/* 회원 관리 E */}
-
+ 
         {/* 게시판 관리 S */}
         <Route path="board/">
           <Route index element={<BoardListPage />} />

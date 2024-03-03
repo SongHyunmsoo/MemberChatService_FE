@@ -12,7 +12,7 @@ export default function apiRequest(url, method = 'GET', data, headers = {}) {
   // /member/join -> http://localhost:3001/api/v1/member/join
   // https://주소/api/....
 
-  if (!url || !url.trim()) return;
+  if (!url || !url.trim()) return;  // URL 데이터가 없으면 처리 X
 
   if (!/^http[s]?:/i.test(url)) {
     url = process.env.REACT_APP_API_URL + url;
@@ -27,9 +27,9 @@ export default function apiRequest(url, method = 'GET', data, headers = {}) {
     data = null;
   }
 
-  const token = cookies.load('token');
-  if (token && token.trim()) {
-    headers.Authorization = `Bearer ${token}`;
+  const token = cookies.load('token');  // 토큰을 가져오기
+  if (token && token.trim()) { // 토큰이 존재하고  공백을 제거해도 존재 해야한다.
+    headers.Authorization = `Bearer ${token}`; // 요청시마다 토큰이 가져와서 로그인 상태를 유지한다.
   }
 
   // 검증 실패시 400

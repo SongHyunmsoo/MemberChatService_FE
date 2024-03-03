@@ -26,21 +26,21 @@ export const apiMemberInfo = () =>
     apiRequest('/member')
       .then((res) => {
         if (res.status >= 200 && res.status < 300 && res.data.success) {
-          resolve(res.data.data);
+          resolve(res.data.data); // 토큰이 만료되면 비우는 코드
         } else {
           cookies.remove('token', { path: '/' });
           resolve(null);
         }
       })
       .catch((err) => {
-        cookies.remove('token', { path: '/' });
+        cookies.remove('token', { path: '/' }); // 토큰을 비우는 코드
         reject(err);
       });
   });
 
 export const updateMemberInfo = (context) => {
   const {
-    actions: { setIsLogin, setIsAdmin, setUserInfo },
+    actions: { setIsLogin, setIsAdmin, setUserInfo }, // 관리자 권한 부여 
   } = context;
 
   apiMemberInfo()
